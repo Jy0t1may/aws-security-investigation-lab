@@ -1,0 +1,15 @@
+{
+  "matching_completed_executions": 1,
+  "results": [
+    {
+      "request_id": "b16ae539-6766-48de-b6c5-cea4a7031cef",
+      "query_id": "7d1565b5-83dc-4146-9771-ad0e6d9c0096",
+      "query_state": "SUCCEEDED",
+      "finding_count": 1,
+      "notifications_published": 0,
+      "notifications_skipped": 1,
+      "bytes_scanned": 275300,
+      "expected_scenario": "PASS"
+    }
+  ]
+}

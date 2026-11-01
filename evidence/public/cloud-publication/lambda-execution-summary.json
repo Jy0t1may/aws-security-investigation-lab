@@ -1,0 +1,23 @@
+{
+  "mode": "CLOUD_PUBLISHING",
+  "query_state": "SUCCEEDED",
+  "query_id": "2f648b30-673b-403d-bcda-b86aff8e763d",
+  "request_id": "01a04d40-e8ab-422b-9a82-d35eb59477e7",
+  "execution_identity": "arn:aws:sts::625867802773:assumed-role/awslab-detection-runner/awslab-detection-runner",
+  "sql_sha256": "de15fd09dee540d986ef99ceed75d55e633b8e7e0dbc410534eeb407b2451ac4",
+  "bytes_scanned": 286105,
+  "finding_count": 1,
+  "notifications_published": 1,
+  "notifications_skipped": 0,
+  "findings": [
+    {
+      "publication_result": "PUBLISHED_NOW",
+      "finding_id": "8deaa4d7345f7fd114e7212cb28e19d78736db294de0f887c92197c564047ea4",
+      "event_id": "d373a1f2-132e-4e13-a617-02187f6fd14d",
+      "event_time": "2026-10-30T22:20:06Z",
+      "event_name": "GetBucketTagging",
+      "error_code": "AccessDenied",
+      "publication_state": "PUBLISHED"
+    }
+  ]
+}

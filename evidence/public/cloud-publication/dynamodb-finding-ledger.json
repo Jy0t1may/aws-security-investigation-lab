@@ -1,0 +1,28 @@
+{
+  "Item": {
+    "created_at": {
+      "S": "2026-10-30T22:39:44.442450+00:00"
+    },
+    "event_id": {
+      "S": "d373a1f2-132e-4e13-a617-02187f6fd14d"
+    },
+    "finding_id": {
+      "S": "8deaa4d7345f7fd114e7212cb28e19d78736db294de0f887c92197c564047ea4"
+    },
+    "owner_request_id": {
+      "S": "01a04d40-e8ab-422b-9a82-d35eb59477e7"
+    },
+    "rule_id": {
+      "S": "AWSLAB-DET-001"
+    },
+    "sns_message_id": {
+      "S": "ee5cf2f4-c45d-5cd0-9c6c-91abdaad0a3a"
+    },
+    "status": {
+      "S": "PUBLISHED"
+    },
+    "updated_at": {
+      "S": "2026-10-30T22:39:44.701498+00:00"
+    }
+  }
+}

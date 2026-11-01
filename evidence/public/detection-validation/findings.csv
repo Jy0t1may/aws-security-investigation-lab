@@ -1,0 +1,2 @@
+eventid,eventtime,eventsource,eventname,awsregion,identity_arn,role_name,bucket_name,errorcode,source_log
+7d900e24-00d4-45ed-979b-f7b80a0d8850,2026-10-27T01:39:48Z,s3.amazonaws.com,GetBucketTagging,eu-north-1,arn:aws:sts::625867802773:assumed-role/awslab-location-reader/awslab-lp-check-20261021,awslab-location-reader,awslab-exercise-32a2346937175b2acdeb4cd420,AccessDenied,s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0140Z_ZKinf66FSNOdVER8.json.gz

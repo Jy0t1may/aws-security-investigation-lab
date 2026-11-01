@@ -1,0 +1,42 @@
+{
+  "operations": [
+    {
+      "service": "sts",
+      "operation": "get-caller-identity",
+      "started_utc": "2026-10-31T20:00:18.503310+00:00",
+      "ended_utc": "2026-10-31T20:00:19.556604+00:00",
+      "exit_code": 0
+    },
+    {
+      "service": "s3api",
+      "operation": "put-object",
+      "started_utc": "2026-10-31T20:00:19.559525+00:00",
+      "ended_utc": "2026-10-31T20:00:20.627399+00:00",
+      "exit_code": 0
+    },
+    {
+      "service": "s3api",
+      "operation": "get-object",
+      "started_utc": "2026-10-31T20:00:20.627781+00:00",
+      "ended_utc": "2026-10-31T20:00:21.497078+00:00",
+      "exit_code": 0
+    },
+    {
+      "service": "s3api",
+      "operation": "delete-object",
+      "started_utc": "2026-10-31T20:00:21.497528+00:00",
+      "ended_utc": "2026-10-31T20:00:22.751093+00:00",
+      "exit_code": 0
+    }
+  ],
+  "bucket": "awslab-exercise-32a2346937175b2acdeb4cd420",
+  "key": "object-event-exercise/20261031T200019Z-718df57cc9524b9dbfbad9bdf36597c0/sample.txt",
+  "region": "eu-north-1",
+  "caller_arn": "arn:aws:sts::625867802773:assumed-role/AccountFullAccessRole/e4088408-9001-7060-c074-5c0f50857de7",
+  "content_bytes": 66,
+  "original_sha256": "c8f091c95d0e32101bb0aede66e56142638e3089d8f923aef98146c1406e7065",
+  "uploaded_version_id": null,
+  "downloaded_sha256": "c8f091c95d0e32101bb0aede66e56142638e3089d8f923aef98146c1406e7065",
+  "content_hashes_match": true,
+  "delete_response": {}
+}

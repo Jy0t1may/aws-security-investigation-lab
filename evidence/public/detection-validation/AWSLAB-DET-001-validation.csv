@@ -1,0 +1,3 @@
+"test_case","source_rows","expected_matches","actual_matches","test_result"
+"positive: denied GetBucketTagging","1","1","1","PASS"
+"negative: allowed GetBucketLocation","1","0","0","PASS"

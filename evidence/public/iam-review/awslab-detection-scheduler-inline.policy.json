@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": "lambda:InvokeFunction",
+      "Effect": "Allow",
+      "Resource": "arn:aws:lambda:eu-north-1:625867802773:function:awslab-detection-runner",
+      "Sid": "InvokeOnlyLabDetector"
+    },
+    {
+      "Action": "sqs:SendMessage",
+      "Effect": "Allow",
+      "Resource": "arn:aws:sqs:eu-north-1:625867802773:awslab-detection-failures",
+      "Sid": "RecordSchedulerDeliveryFailures"
+    }
+  ]
+}

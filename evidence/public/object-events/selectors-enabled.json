@@ -1,0 +1,47 @@
+{
+    "TrailARN": "arn:aws:cloudtrail:eu-north-1:625867802773:trail/awslab-management",
+    "AdvancedEventSelectors": [
+        {
+            "Name": "PreserveAllManagementEvents",
+            "FieldSelectors": [
+                {
+                    "Field": "eventCategory",
+                    "Equals": [
+                        "Management"
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "TemporaryExerciseObjectEvents",
+            "FieldSelectors": [
+                {
+                    "Field": "eventCategory",
+                    "Equals": [
+                        "Data"
+                    ]
+                },
+                {
+                    "Field": "eventName",
+                    "Equals": [
+                        "PutObject",
+                        "GetObject",
+                        "DeleteObject"
+                    ]
+                },
+                {
+                    "Field": "resources.ARN",
+                    "StartsWith": [
+                        "arn:aws:s3:::awslab-exercise-32a2346937175b2acdeb4cd420/object-event-exercise/"
+                    ]
+                },
+                {
+                    "Field": "resources.type",
+                    "Equals": [
+                        "AWS::S3::Object"
+                    ]
+                }
+            ]
+        }
+    ]
+}

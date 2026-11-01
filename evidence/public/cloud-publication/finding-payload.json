@@ -1,0 +1,16 @@
+{
+  "schema_version": "1",
+  "finding_id": "8deaa4d7345f7fd114e7212cb28e19d78736db294de0f887c92197c564047ea4",
+  "rule_id": "AWSLAB-DET-001",
+  "classification": "lab_authorization_failure",
+  "context": "Controlled lab detection; not a confirmed incident.",
+  "event_id": "d373a1f2-132e-4e13-a617-02187f6fd14d",
+  "event_time": "2026-10-30T22:20:06Z",
+  "event_name": "GetBucketTagging",
+  "region": "eu-north-1",
+  "role_name": "awslab-location-reader",
+  "bucket_name": "awslab-exercise-32a2346937175b2acdeb4cd420",
+  "error_code": "AccessDenied",
+  "athena_query_id": "2f648b30-673b-403d-bcda-b86aff8e763d",
+  "created_at": "2026-10-30T22:39:44.482676+00:00"
+}

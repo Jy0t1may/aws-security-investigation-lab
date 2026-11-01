@@ -1,0 +1,65 @@
+[
+  {
+    "policy": "awslab-detection-runner-trust.policy.json",
+    "findings": "awslab-detection-runner-trust.findings.json",
+    "description": "IAM role trust policy for Lambda detector",
+    "analyzer_findings_count": 0,
+    "status": "PASS"
+  },
+  {
+    "policy": "awslab-detection-runner-inline.policy.json",
+    "findings": "awslab-detection-runner-inline.findings.json",
+    "description": "IAM inline policy for Lambda detector",
+    "analyzer_findings_count": 0,
+    "status": "PASS"
+  },
+  {
+    "policy": "awslab-detection-scheduler-trust.policy.json",
+    "findings": "awslab-detection-scheduler-trust.findings.json",
+    "description": "IAM role trust policy for EventBridge Scheduler",
+    "analyzer_findings_count": 0,
+    "status": "PASS"
+  },
+  {
+    "policy": "awslab-detection-scheduler-inline.policy.json",
+    "findings": "awslab-detection-scheduler-inline.findings.json",
+    "description": "IAM inline policy for EventBridge Scheduler",
+    "analyzer_findings_count": 0,
+    "status": "PASS"
+  },
+  {
+    "policy": "awslab-location-reader-trust.policy.json",
+    "findings": "awslab-location-reader-trust.findings.json",
+    "description": "IAM role trust policy for restricted test role",
+    "analyzer_findings_count": 0,
+    "status": "PASS"
+  },
+  {
+    "policy": "awslab-location-reader-inline.policy.json",
+    "findings": "awslab-location-reader-inline.findings.json",
+    "description": "IAM inline policy for restricted test role",
+    "analyzer_findings_count": 0,
+    "status": "PASS"
+  },
+  {
+    "policy": "bucket-0-policy.policy.json",
+    "findings": "bucket-0-policy.findings.json",
+    "description": "S3 resource policy for audit logs bucket",
+    "analyzer_findings_count": 0,
+    "status": "PASS"
+  },
+  {
+    "policy": "bucket-1-policy.policy.json",
+    "findings": "bucket-1-policy.findings.json",
+    "description": "S3 resource policy for Athena query results bucket",
+    "analyzer_findings_count": 0,
+    "status": "PASS"
+  },
+  {
+    "policy": "bucket-2-policy.policy.json",
+    "findings": "bucket-2-policy.findings.json",
+    "description": "S3 resource policy for controlled exercise bucket",
+    "analyzer_findings_count": 0,
+    "status": "PASS"
+  }
+]

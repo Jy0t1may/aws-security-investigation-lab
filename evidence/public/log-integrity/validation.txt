@@ -1,0 +1,37 @@
+Validating log files for trail arn:aws:cloudtrail:eu-north-1:625867802773:trail/awslab-management between 2026-10-27T00:00:00Z and 2026-10-27T04:00:00Z
+
+Digest file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail-Digest/eu-north-1/2026/10/27/625867802773_CloudTrail-Digest_eu-north-1_awslab-management_eu-north-1_20261027T044112Z.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0340Z_nypCfYFVJOAQWkk8.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0350Z_t0hgm93EMreRVIjD.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0420Z_b7OYTmyjGMbKjmK6.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0425Z_gxlbzUPBqOf867qs.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0435Z_Sjmhmbfcs4CMbzOW.json.gz	valid
+Digest file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail-Digest/eu-north-1/2026/10/27/625867802773_CloudTrail-Digest_eu-north-1_awslab-management_eu-north-1_20261027T034112Z.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0245Z_alvWRfqHRFGVGbXh.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0250Z_eDa9Rmz4BbjGyroa.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0300Z_jTK7V32Ggd4WmVqj.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0340Z_xDIsCTXtaTuoPsUx.json.gz	valid
+Digest file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail-Digest/eu-north-1/2026/10/27/625867802773_CloudTrail-Digest_eu-north-1_awslab-management_eu-north-1_20261027T024112Z.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0140Z_ZKinf66FSNOdVER8.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0150Z_gAOzJGD2HKlFksQp.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0155Z_kubtk0wkLFah0Vly.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0155Z_8ZKoSKiWMRnsbMnQ.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0200Z_WVZ9TMDejaB1XnYO.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0215Z_U88JPsMObYCIM4Kc.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0220Z_mfzuCbwhwmRKksDt.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0230Z_h8vvBM4Tzw5keog2.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0235Z_EPkOqOCZN28g9oTH.json.gz	valid
+Digest file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail-Digest/eu-north-1/2026/10/27/625867802773_CloudTrail-Digest_eu-north-1_awslab-management_eu-north-1_20261027T014112Z.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0050Z_j42G6JxHwcq00kXn.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0050Z_LkKItyzHzuJr0lhZ.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0055Z_fRbpswR10kWJG9mV.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/27/625867802773_CloudTrail_eu-north-1_20261027T0140Z_aoe7DhHmm7NWy5Nl.json.gz	valid
+Digest file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail-Digest/eu-north-1/2026/10/27/625867802773_CloudTrail-Digest_eu-north-1_awslab-management_eu-north-1_20261027T004112Z.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/26/625867802773_CloudTrail_eu-north-1_20261026T2350Z_E6cQMA5imq0jlUIk.json.gz	valid
+Log file	s3://awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/2026/10/26/625867802773_CloudTrail_eu-north-1_20261026T2355Z_MzMy2LxyLBQifrCn.json.gz	valid
+
+Results requested for 2026-10-27T00:00:00Z to 2026-10-27T04:00:00Z
+Results found for 2026-10-27T00:00:00Z to 2026-10-27T04:00:00Z:
+
+5/5 digest files valid
+24/24 log files valid

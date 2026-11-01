@@ -1,0 +1,13 @@
+{
+  "rule_id": "AWSLAB-DET-001",
+  "started_at": "2026-10-27T02:25:26.791199+00:00",
+  "profile": "investigation-lab",
+  "region": "eu-north-1",
+  "workgroup": "awslab-investigation",
+  "sql_sha256": "de15fd09dee540d986ef99ceed75d55e633b8e7e0dbc410534eeb407b2451ac4",
+  "status": "SUCCEEDED",
+  "query_id": "5ee023bd-3b91-4b4e-90c4-117222d1ce32",
+  "finished_at": "2026-10-27T02:25:35.754777+00:00",
+  "finding_count": 1,
+  "bytes_scanned": 162853
+}

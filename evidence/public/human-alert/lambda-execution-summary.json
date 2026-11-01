@@ -1,0 +1,38 @@
+{
+  "trigger_context": {
+    "trigger": "MANUAL_HUMAN_ALERT_VALIDATION",
+    "schedule_arn": null,
+    "scheduled_time": null,
+    "scheduler_execution_id": null
+  },
+  "mode": "CLOUD_PUBLISHING",
+  "query_state": "SUCCEEDED",
+  "query_id": "74668ef9-4d01-47fa-8851-8ebf05af9e8a",
+  "request_id": "7c7f0e1d-6cc3-4e46-a273-b0c8088dc70f",
+  "execution_identity": "arn:aws:sts::625867802773:assumed-role/awslab-detection-runner/awslab-detection-runner",
+  "sql_sha256": "de15fd09dee540d986ef99ceed75d55e633b8e7e0dbc410534eeb407b2451ac4",
+  "bytes_scanned": 409161,
+  "finding_count": 2,
+  "notifications_published": 1,
+  "notifications_skipped": 1,
+  "findings": [
+    {
+      "publication_result": "SKIPPED_PUBLISHED",
+      "finding_id": "8deaa4d7345f7fd114e7212cb28e19d78736db294de0f887c92197c564047ea4",
+      "event_id": "d373a1f2-132e-4e13-a617-02187f6fd14d",
+      "event_time": "2026-10-30T22:20:06Z",
+      "event_name": "GetBucketTagging",
+      "error_code": "AccessDenied",
+      "publication_state": "PUBLISHED"
+    },
+    {
+      "publication_result": "PUBLISHED_NOW",
+      "finding_id": "11150f8a161caa8d86643754cff194f6e070b3cc4d1421c44173b1093444244d",
+      "event_id": "31c83772-eb90-4c6d-9fee-a36c7cedb678",
+      "event_time": "2026-10-31T16:11:24Z",
+      "event_name": "GetBucketTagging",
+      "error_code": "AccessDenied",
+      "publication_state": "PUBLISHED"
+    }
+  ]
+}

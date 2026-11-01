@@ -1,0 +1,11 @@
+{
+  "TrailARN": "arn:aws:cloudtrail:eu-north-1:625867802773:trail/awslab-management",
+  "EventSelectors": [
+    {
+      "ReadWriteType": "All",
+      "IncludeManagementEvents": true,
+      "DataResources": [],
+      "ExcludeManagementEventSources": []
+    }
+  ]
+}

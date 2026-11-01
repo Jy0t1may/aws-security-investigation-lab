@@ -1,0 +1,8 @@
+{
+  "source_contains_trigger_context": false,
+  "package_contains_trigger_context": false,
+  "source_matches_packaged_handler": true,
+  "local_package_matches_deployed_hash": true,
+  "deployed_last_modified": "2026-10-27T02:51:52.000+0000",
+  "deployed_update_status": "Successful"
+}

@@ -1,0 +1,46 @@
+{
+  "QueryExecution": {
+    "QueryExecutionId": "5ee023bd-3b91-4b4e-90c4-117222d1ce32",
+    "Query": "-- AWSLAB-DET-001: operational, rolling-window query.\n-- Source: date-projected CloudTrail table, eu-north-1.\n-- Lookback: 24 hours, evaluated in UTC.\n-- Results are candidates for notification, not evidence of compromise.\n-- Keep detection conditions aligned with AWSLAB-DET-001.sql.\n\nSELECT DISTINCT\n  eventid,\n  eventtime,\n  eventsource,\n  eventname,\n  awsregion,\n  useridentity.arn AS identity_arn,\n  useridentity.sessioncontext.sessionissuer.username AS role_name,\n  json_extract_scalar(requestparameters, '$.bucketName') AS bucket_name,\n  errorcode,\n  \"$path\" AS source_log\nFROM awslab_investigation.cloudtrail_management\nWHERE log_date BETWEEN\n      date_format(\n        (current_timestamp AT TIME ZONE 'UTC') - INTERVAL '24' HOUR,\n        '%Y/%m/%d'\n      )\n      AND date_format(\n        current_timestamp AT TIME ZONE 'UTC',\n        '%Y/%m/%d'\n      )\n  AND from_iso8601_timestamp(eventtime)\n      >= current_timestamp - INTERVAL '24' HOUR\n  AND from_iso8601_timestamp(eventtime) < current_timestamp\n  AND eventsource = 's3.amazonaws.com'\n  AND eventname = 'GetBucketTagging'\n  AND errorcode = 'AccessDenied'\n  AND useridentity.type = 'AssumedRole'\n  AND useridentity.sessioncontext.sessionissuer.username =\n      'awslab-location-reader'\nORDER BY eventtime",
+    "StatementType": "DML",
+    "ResultConfiguration": {
+      "OutputLocation": "s3://awslab-query-results-f132ce4c63fc4f330e7d2ce055/athena/5ee023bd-3b91-4b4e-90c4-117222d1ce32.csv",
+      "EncryptionConfiguration": {
+        "EncryptionOption": "SSE_S3"
+      },
+      "ExpectedBucketOwner": "625867802773"
+    },
+    "ResultReuseConfiguration": {
+      "ResultReuseByAgeConfiguration": {
+        "Enabled": false
+      }
+    },
+    "QueryExecutionContext": {
+      "Database": "awslab_investigation",
+      "Catalog": "awsdatacatalog"
+    },
+    "Status": {
+      "State": "SUCCEEDED",
+      "SubmissionDateTime": "2026-10-27T03:25:28.182000+01:00",
+      "CompletionDateTime": "2026-10-27T03:25:29.037000+01:00"
+    },
+    "Statistics": {
+      "EngineExecutionTimeInMillis": 696,
+      "DataScannedInBytes": 162853,
+      "TotalExecutionTimeInMillis": 855,
+      "QueryQueueTimeInMillis": 91,
+      "ServicePreProcessingTimeInMillis": 45,
+      "QueryPlanningTimeInMillis": 124,
+      "ServiceProcessingTimeInMillis": 23,
+      "ResultReuseInformation": {
+        "ReusedPreviousResult": false
+      }
+    },
+    "WorkGroup": "awslab-investigation",
+    "EngineVersion": {
+      "SelectedEngineVersion": "AUTO",
+      "EffectiveEngineVersion": "Athena engine version 3"
+    },
+    "SubstatementType": "SELECT"
+  }
+}

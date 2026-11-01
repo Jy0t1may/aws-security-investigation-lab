@@ -1,0 +1,105 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "athena:StartQueryExecution",
+        "athena:GetQueryExecution",
+        "athena:GetQueryResults",
+        "athena:StopQueryExecution",
+        "athena:GetWorkGroup"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:athena:eu-north-1:625867802773:workgroup/awslab-investigation",
+      "Sid": "ExecuteQueriesInLabWorkgroup"
+    },
+    {
+      "Action": [
+        "glue:GetDatabase",
+        "glue:GetTable",
+        "glue:GetPartitions",
+        "glue:BatchGetPartition"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "arn:aws:glue:eu-north-1:625867802773:catalog",
+        "arn:aws:glue:eu-north-1:625867802773:database/awslab_investigation",
+        "arn:aws:glue:eu-north-1:625867802773:table/awslab_investigation/cloudtrail_management"
+      ],
+      "Sid": "ReadCloudTrailTableMetadata"
+    },
+    {
+      "Action": "s3:GetBucketLocation",
+      "Effect": "Allow",
+      "Resource": [
+        "arn:aws:s3:::awslab-audit-c2b8fb5274a4f0eaf19e0a97bd",
+        "arn:aws:s3:::awslab-query-results-f132ce4c63fc4f330e7d2ce055"
+      ],
+      "Sid": "LocateLabBuckets"
+    },
+    {
+      "Action": "s3:ListBucket",
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": "AWSLogs/625867802773/CloudTrail/eu-north-1/*"
+        }
+      },
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::awslab-audit-c2b8fb5274a4f0eaf19e0a97bd",
+      "Sid": "ListStockholmAuditPrefix"
+    },
+    {
+      "Action": "s3:GetObject",
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::awslab-audit-c2b8fb5274a4f0eaf19e0a97bd/AWSLogs/625867802773/CloudTrail/eu-north-1/*",
+      "Sid": "ReadStockholmAuditObjects"
+    },
+    {
+      "Action": "s3:ListBucket",
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": "athena/*"
+        }
+      },
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::awslab-query-results-f132ce4c63fc4f330e7d2ce055",
+      "Sid": "ListQueryResultPrefix"
+    },
+    {
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:AbortMultipartUpload",
+        "s3:ListMultipartUploadParts"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::awslab-query-results-f132ce4c63fc4f330e7d2ce055/athena/*",
+      "Sid": "ReadAndWriteQueryResults"
+    },
+    {
+      "Action": [
+        "dynamodb:GetItem",
+        "dynamodb:PutItem",
+        "dynamodb:UpdateItem"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:dynamodb:eu-north-1:625867802773:table/awslab-detection-publications",
+      "Sid": "MaintainPublicationLedger"
+    },
+    {
+      "Action": "sns:Publish",
+      "Effect": "Allow",
+      "Resource": "arn:aws:sns:eu-north-1:625867802773:awslab-detection-findings",
+      "Sid": "PublishDetectionFindings"
+    },
+    {
+      "Action": [
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:logs:eu-north-1:625867802773:log-group:/aws/lambda/awslab-detection-runner:*",
+      "Sid": "WriteDetectorLogs"
+    }
+  ]
+}

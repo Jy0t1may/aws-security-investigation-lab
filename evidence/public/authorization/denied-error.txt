@@ -1,0 +1,2 @@
+
+aws: [ERROR]: An error occurred (AccessDenied) when calling the GetBucketTagging operation: User: arn:aws:sts::625867802773:assumed-role/awslab-location-reader/awslab-lp-check-20261021 is not authorized to perform: s3:GetBucketTagging on resource: "arn:aws:s3:::awslab-exercise-32a2346937175b2acdeb4cd420" because no identity-based policy allows the s3:GetBucketTagging action

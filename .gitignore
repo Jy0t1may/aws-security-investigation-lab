@@ -1,0 +1,70 @@
+# macOS working metadata
+.DS_Store
+
+# Preserve unreviewed originals locally; review public derivatives separately.
+# Do not replace these with a blanket /evidence/ exclusion.
+/evidence/private/
+/downloads/
+
+# AWS authentication and local environment inputs
+.aws/
+.env
+.env.*
+# An example is eligible, not automatically safe: inspect actual contents.
+!.env.example
+
+# Terraform downloaded providers/modules and operational state
+**/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+# Keep Terraform source and .terraform.lock.hcl eligible for tracking.
+
+# Binary saved plans; reviewed textual evidence may use a .txt filename.
+*.tfplan
+tfplan
+tfplan.*
+plan.out
+
+# Private local inputs and overrides; sanitized *.example files remain eligible.
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform crash output
+crash.log
+crash.*.log
+
+# Local databases and their write-ahead/shared-memory sidecars
+*.duckdb
+*.duckdb.wal
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+
+# Private key material: any public certificate exception requires explicit review.
+*.pem
+*.key
+
+# Generated Lambda deployment packages
+/infrastructure/build/
+
+# Python-generated files and local environments
+__pycache__/
+*.py[cod]
+.venv/
+
+# No blanket exclusions for public JSON, CSV, SQL, text logs, images, or checksums.
+# Ignore rules never remove already-tracked files or clear repository history.

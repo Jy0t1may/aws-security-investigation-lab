@@ -1,0 +1,8 @@
+{
+  "expected_findings": 1,
+  "correlated_findings": 1,
+  "matching_message_copies": 1,
+  "acknowledgements_accepted": 1,
+  "acknowledgements_failed": 0,
+  "result": "PASS"
+}

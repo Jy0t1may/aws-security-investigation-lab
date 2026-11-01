@@ -1,0 +1,27 @@
+{
+  "ActionAfterCompletion": "NONE",
+  "Arn": "arn:aws:scheduler:eu-north-1:625867802773:schedule/awslab-detection/awslab-detection-validation",
+  "CreationDate": "2026-10-31T00:42:02.906000+01:00",
+  "Description": "One-time unattended detection validation",
+  "FlexibleTimeWindow": {
+    "Mode": "OFF"
+  },
+  "GroupName": "awslab-detection",
+  "LastModificationDate": "2026-10-31T00:42:02.906000+01:00",
+  "Name": "awslab-detection-validation",
+  "ScheduleExpression": "at(2026-10-31T00:01:00)",
+  "ScheduleExpressionTimezone": "UTC",
+  "State": "ENABLED",
+  "Target": {
+    "Arn": "arn:aws:lambda:eu-north-1:625867802773:function:awslab-detection-runner",
+    "DeadLetterConfig": {
+      "Arn": "arn:aws:sqs:eu-north-1:625867802773:awslab-detection-failures"
+    },
+    "Input": "{\"schedule_arn\":\"\\u003caws.scheduler.schedule-arn\\u003e\",\"scheduled_time\":\"\\u003caws.scheduler.scheduled-time\\u003e\",\"scheduler_execution_id\":\"\\u003caws.scheduler.execution-id\\u003e\",\"trigger\":\"SCHEDULED_VALIDATION\"}",
+    "RetryPolicy": {
+      "MaximumEventAgeInSeconds": 3600,
+      "MaximumRetryAttempts": 0
+    },
+    "RoleArn": "arn:aws:iam::625867802773:role/awslab-detection-scheduler"
+  }
+}

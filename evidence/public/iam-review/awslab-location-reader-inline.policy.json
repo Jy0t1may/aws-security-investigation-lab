@@ -1,0 +1,11 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": "s3:GetBucketLocation",
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::awslab-exercise-32a2346937175b2acdeb4cd420",
+      "Sid": "ReadExerciseBucketLocationOnly"
+    }
+  ]
+}

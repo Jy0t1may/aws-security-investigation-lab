@@ -1,0 +1,65 @@
+[
+  {
+    "eventVersion": "1.11",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAZDOFAZCKUTYXBBAPK:awslab-lp-check-20261021",
+      "arn": "arn:aws:sts::625867802773:assumed-role/awslab-location-reader/awslab-lp-check-20261021",
+      "accountId": "625867802773",
+      "accessKeyId": "ASIA...[REDACTED]...",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAZDOFAZCKUTYXBBAPK",
+          "arn": "arn:aws:iam::625867802773:role/awslab-location-reader",
+          "accountId": "625867802773",
+          "userName": "awslab-location-reader"
+        },
+        "attributes": {
+          "creationDate": "2026-10-27T01:39:36Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "eventTime": "2026-10-27T01:39:37Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "GetBucketLocation",
+    "awsRegion": "eu-north-1",
+    "sourceIPAddress": "198.51.100.24",
+    "userAgent": "[aws-cli/2.38.1 md/awscrt#0.37.0 ua/2.1 os/macos#27.0.0 md/arch#arm64 lang/python#3.15.0 md/pyimpl#CPython m/n,i,AD,b,AC,Z,E,o cfg/retry-mode#standard md/installer#source sid/1d9e93a2f3eb md/prompt#off md/command#s3api.get-bucket-location]",
+    "requestParameters": {
+      "bucketName": "awslab-exercise-32a2346937175b2acdeb4cd420",
+      "location": "",
+      "Host": "s3.eu-north-1.amazonaws.com"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "CipherSuite": "TLS_AES_128_GCM_SHA256",
+      "bytesTransferredIn": 0,
+      "startTime": 1793065177010,
+      "endTime": 1793065177036,
+      "x-amz-id-2": "WRYjADYXHR5wgBaI85JA1J/Li6C8s3yd868HEEVszuR1F/hCKwLf9Iufgttd3y4oCyBqeFW7KpfYv7hXuL5XJUGGdyTA8dW/",
+      "httpStatusCode": 200,
+      "bytesTransferredOut": 138
+    },
+    "requestID": "87JYG2C2T1TQV411",
+    "eventID": "e8a51efe-10f7-497e-9202-271653c1d350",
+    "readOnly": true,
+    "resources": [
+      {
+        "accountId": "625867802773",
+        "type": "AWS::S3::Bucket",
+        "ARN": "arn:aws:s3:::awslab-exercise-32a2346937175b2acdeb4cd420"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "625867802773",
+    "eventCategory": "Management",
+    "tlsDetails": {
+      "tlsVersion": "TLSv1.3",
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "s3.eu-north-1.amazonaws.com"
+    }
+  }
+]

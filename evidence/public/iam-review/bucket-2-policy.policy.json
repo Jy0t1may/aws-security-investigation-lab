@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyInsecureTransport",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::awslab-query-results-f132ce4c63fc4f330e7d2ce055",
+        "arn:aws:s3:::awslab-query-results-f132ce4c63fc4f330e7d2ce055/*"
+      ],
+      "Condition": {
+        "Bool": {
+          "aws:PrincipalIsAWSService": "false",
+          "aws:SecureTransport": "false"
+        }
+      }
+    }
+  ]
+}
